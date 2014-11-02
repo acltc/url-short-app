@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'links/new' => 'links#new', as: :new_link
   post 'links' => 'links#create'
 
+  get '/:slug' => 'links#redirect' 
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
